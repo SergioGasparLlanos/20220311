@@ -1,0 +1,23 @@
+databaseChangeLog:
+    - changeSet:
+        id: seeder_tabla_opciones_respuestas
+        author: sergio_gaspar
+        changes:
+            - sql:
+                sql: INSERT INTO opciones_respuestas (enunciado, pregunta_id,  created_at, deleted_at)
+                      VALUES('Buena', 1, now(), null )
+            - sql:
+                sql: INSERT INTO opciones_respuestas (enunciado, pregunta_id,  created_at, deleted_at)
+                      VALUES('Regular', 1, now(), null )
+            - sql:
+                sql: INSERT INTO opciones_respuestas (enunciado, pregunta_id,  created_at, deleted_at)
+                      VALUES('No tan buena', 1, now(), null )
+            - sql:
+                sql: INSERT INTO opciones_respuestas (enunciado, pregunta_id,  created_at, deleted_at)
+                      VALUES('Masculino', 4, now(), null )
+            - sql:
+                sql: INSERT INTO opciones_respuestas (enunciado, pregunta_id,  created_at, deleted_at)
+                      VALUES('Femenino', 4, now(), null )
+            - sql:
+                sql: INSERT INTO opciones_respuestas (enunciado, pregunta_id,  created_at, deleted_at)
+                      VALUES('Otro - NS - NR', 4, now(), null )

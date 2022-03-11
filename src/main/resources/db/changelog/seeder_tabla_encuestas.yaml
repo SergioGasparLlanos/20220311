@@ -1,0 +1,11 @@
+databaseChangeLog:
+    - changeSet:
+        id: seeder_tabla_encuestas
+        author: sergio_gaspar
+        changes:
+            - sql:
+                sql: INSERT INTO encuestas (nombre, descripcion, usuario_id, created_at, deleted_at)
+                      VALUES('Encuesta de satisfacción', 'Encuesta para saber el estado de satisfacción del cliente con el servicio de restaurante', 1, now(), null )
+            - sql:
+                sql: INSERT INTO encuestas (nombre, descripcion, usuario_id, created_at, deleted_at)
+                      VALUES('Encuesta de datos personales', 'Encuesta para saber los datos personales del cliente', 1, now(), null )

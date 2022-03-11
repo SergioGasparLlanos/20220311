@@ -1,0 +1,17 @@
+databaseChangeLog:
+    - changeSet:
+        id: seeder_tabla_preguntas
+        author: sergio_gaspar
+        changes:
+            - sql:
+                sql: INSERT INTO preguntas (enunciado, created_at, deleted_at)
+                      VALUES('¿Cómo percibe la atención del mesero? Favor seleccione.',now(), null )
+            - sql:
+                sql: INSERT INTO preguntas (enunciado, created_at, deleted_at)
+                      VALUES('¿Algo que podamos mejorar?', now(), null )
+            - sql:
+                sql: INSERT INTO preguntas (enunciado,  created_at, deleted_at)
+                      VALUES('¿Cuál es su edad?', now(), null)
+            - sql:
+                sql: INSERT INTO preguntas (enunciado,  created_at, deleted_at)
+                      VALUES('Seleccione su género', now(), null)

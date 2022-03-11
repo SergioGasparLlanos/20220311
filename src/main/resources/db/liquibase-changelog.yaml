@@ -1,0 +1,23 @@
+databaseChangeLog:
+    - include:
+        file: db/changelog/tabla_usuarios.yaml
+    - include:
+        file: db/changelog/tabla_encuestas.yaml
+    - include:
+        file: db/changelog/tabla_encuestas_preguntas.yaml
+    - include:
+        file: db/changelog/tabla_preguntas.yaml
+    - include:
+        file: db/changelog/tabla_opciones_respuestas.yaml
+    - include:
+        file: db/changelog/tabla_respuestas.yaml
+    - include:
+        file: db/changelog/seeder_tabla_usuarios.yaml
+    - include:
+        file: db/changelog/seeder_tabla_encuestas.yaml
+    - include:
+        file: db/changelog/seeder_tabla_preguntas.yaml
+    - include:
+        file: db/changelog/seeder_tabla_encuestas_preguntas.yaml
+    - include:
+        file: db/changelog/seeder_tabla_opciones_respuestas.yaml

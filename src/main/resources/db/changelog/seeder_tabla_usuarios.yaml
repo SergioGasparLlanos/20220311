@@ -1,0 +1,11 @@
+databaseChangeLog:
+    - changeSet:
+        id: seeder_tabla_usuarios
+        author: sergio_gaspar
+        changes:
+            - sql:
+                sql: INSERT INTO usuarios (nombre, apellido, correo, created_at, deleted_at)
+                      VALUES('SERGIO ANDRES', 'GASPAR LLANOS', 'sergiogasparllanos11@gmail.com', now(), null )
+            - sql:
+                sql: INSERT INTO usuarios (nombre, apellido, correo, created_at, deleted_at)
+                      VALUES('JUAN', 'PEREZ PEREZ', 'correojuanperez@gmail.com', now(), null )

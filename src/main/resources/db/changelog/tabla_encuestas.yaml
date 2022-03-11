@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: tabla_encuestas
+      author: sergio_gaspar
+      changes:
+      - createTable:
+          tableName: encuestas
+          columns:
+            - column:
+                name: id
+                type: bigserial
+                autoIncrement: true
+                constraints:
+                  nullable: false
+                  primaryKey: true
+            - column:
+                name: nombre
+                type: varchar(250)
+                constraints:
+                  nullable: false
+            - column:
+                name: descripcion
+                type: varchar(1000)
+                constraints:
+                  nullable: true
+            - column:
+                name: usuario_id
+                type: int
+                constraints:
+                  nullable: false
+            - column:
+                name: created_at
+                type: datetime
+            - column:
+                name: deleted_at
+                type: datetime
+                  

@@ -1,0 +1,17 @@
+databaseChangeLog:
+    - changeSet:
+        id: seeder_tabla_encuestas_preguntas
+        author: sergio_gaspar
+        changes:
+            - sql:
+                sql: INSERT INTO encuestas_preguntas (encuesta_id, pregunta_id,  created_at, deleted_at)
+                      VALUES(1, 1, now(), null )
+            - sql:
+                sql: INSERT INTO encuestas_preguntas (encuesta_id, pregunta_id,  created_at, deleted_at)
+                      VALUES(1, 2, now(), null )
+            - sql:
+                sql: INSERT INTO encuestas_preguntas (encuesta_id, pregunta_id,  created_at, deleted_at)
+                      VALUES(2, 3, now(), null )
+            - sql:
+                sql: INSERT INTO encuestas_preguntas (encuesta_id, pregunta_id,  created_at, deleted_at)
+                      VALUES(2, 4, now(), null )

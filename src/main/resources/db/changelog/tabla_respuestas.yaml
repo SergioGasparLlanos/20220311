@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: tabla_respuestas
+      author: sergio_gaspar
+      changes:
+      - createTable:
+          tableName: respuestas
+          columns:
+            - column:
+                name: id
+                type: bigserial
+                autoIncrement: true
+                constraints:
+                  nullable: false
+                  primaryKey: true
+            - column:
+                name: encuesta_pregunta_id
+                type: int
+                constraints:
+                  nullable: false
+            - column:
+                name: opcion_respuesta_id
+                type: int
+                constraints:
+                  nullable: true
+            - column:
+                name: enunciado
+                type: varchar(500)
+                constraints:
+                  nullable: true
+            - column:
+                name: created_at
+                type: datetime
+            - column:
+                name: deleted_at
+                type: datetime
+                  
