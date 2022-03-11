@@ -7,3 +7,4 @@ Las preguntas pueden ser abiertas o de selección.
 
 * Se incluye una imagen "ModeloEntidadRelacion.jpg" con el modelo entidad relación de la base de datos diseñada.
 * Se incluye un archivo "Api Encuestas RobinFood.postman_collection.json"
+* Se incluye (con liquibase) la creación de tablas y datos de prueba sobre una base de datos llamada "robinfood".
