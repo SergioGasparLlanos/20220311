@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "4ec327a3-14dc-418e-adfe-53377b9d26a9",
+		"name": "Api Encuestas RobinFood",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. - Buscar encuesta por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/api/encuestas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"api",
+						"encuestas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. - Buscar preguntas por encuesta id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/api/encuestas-preguntas/encuesta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"api",
+						"encuestas-preguntas",
+						"encuesta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. - Guardar respuestas encuesta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"encuestaPregunta\": {\"id\": 1},\r\n        \"opcionRespuesta\": { \"id\": 2 },\r\n        \"enunciado\": null\r\n\r\n    },\r\n    {\r\n        \"encuestaPregunta\": { \"id\": 2 },\r\n        \"opcionRespuesta\": null,\r\n        \"enunciado\": \"Se puede mejorar si el mesero está pendiente de la mesa\"\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8585/api/respuestas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"api",
+						"respuestas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.- Buscar respuestas de una encuesta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/api/respuestas/encuesta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"api",
+						"respuestas",
+						"encuesta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
